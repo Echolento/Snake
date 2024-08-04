@@ -1,0 +1,141 @@
+#mainCanvas {
+    border: 4px solid;
+    margin-top: 20px;
+}
+
+body, html {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    text-align: center;
+}
+
+#ScoreText {
+    width: 115px;
+    height: 2.5rem;
+    font-size: large;
+}
+
+#resetBTN {
+    height: 2.5rem;
+    width: 115px;
+}
+
+#SpeedBtn {
+    width: 115px !important;
+    height: 2.5rem;
+    font-size: large;
+}
+
+#ShowHideControls {
+    height: 2.5rem;
+    width: 4rem;
+    font-size: large;
+}
+
+.Container  {
+    text-align: center;
+    padding: 0 !important;
+}
+
+#phoneControls {
+    display: flex;
+    justify-content: center;
+}
+
+.plus-container {
+    position: relative;
+    width: 200px;
+    height: 200px; 
+    margin-top: 20px;
+}
+
+.plus-button {
+    position: absolute;
+    width: 60px;  
+    height: 60px; 
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: x-large;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+    position: absolute;
+    bottom: 0;
+}
+
+#up {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#down {
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#scoreReset {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: fit-content;
+}
+
+.srContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 767px) {
+    #ScoreText {
+        width: 200px !important;
+        height: 4rem !important;
+    }
+    #resetBTN {
+        height: 4rem !important;
+        width: 200px !important;
+    }
+    #phoneControls {
+        visibility: hidden;
+        height: 1px;
+    }
+    #PhoneCtrlContainer {
+        height: 1px;
+    }
+    #ShowHideControls {
+        visibility: hidden;
+    }
+    #SpeedBtn {
+        width: 200px !important;
+        height: 4rem;
+        font-size: x-large;
+    }
+    #scoreReset {
+        width: 450px;
+    }
+}
